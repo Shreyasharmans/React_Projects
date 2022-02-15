@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Events</title>
+  </head>
+  <body>
+<h1>This is a demo page!</h1>
+<div style="height:100px;border:2px solid black" id="myDiv">
+<button>Click Me!</button>
+</div>
+<script>
+document.querySelector("myDiv").addEventListenert("click",function(){
+    console.log("Div was clicked");
+});
+document.querySelector("button").addEventListener("click",function(e){
+    console.log("Button was clicked");
+    document.getElementsByTagName("h1")[0].innerHTML="Hello World,Cipher School!";
+});
+
+
+//Here when button is clicked, as it is inside div , all the events of button are also trigerred.
+//So we use concept of parent child relationship.
+
+
+
+    //     document.getElementsByTagName("h1")[0].innerHTML="Hello World,Cipher School!";
+    // btn.addEventListener("click",function(e){
+    //     document.getElementsByTagName("h1")[0].innerHTML="Hello World,Cipher School!";
+    // var btn=document.querySelector("button");
+    // btn.addEventListener("click",function(e){
+    //     document.getElementsByTagName("h1")[0].innerHTML="Hello World,Cipher School!";
+    // });
+    </script>
+  </body>
+  </html>

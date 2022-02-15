@@ -1,0 +1,8 @@
+.to_edit{
+    text-decoration: line-through;
+    background-color: aqua;
+}
+.undo_edit{
+    text-decoration: none;
+    background-color: yellow;
+}
